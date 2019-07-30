@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment_3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: medium;
+        }
+    </style>
+    <link rel="stylesheet" href="StyleSheet1.css">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <h1>Advisor Appointment Sign-Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:LoginName ID="LoginName1" runat="server" CssClass="auto-style1" />
+&nbsp;</h1>
+        <div id="masterLinks">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/pages/ArrangeMeeting.aspx">Select Time</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server">Send Message</asp:HyperLink>
+&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink4" runat="server">View Appointments</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server">Cancel Appointment</asp:HyperLink>
+        </div>
+&nbsp;<div>
+
+    <div id="mainContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+
+    </div>
+            <footer>
+
+
+            <br />
+            AUniversity<br />
+            Department of Plot Convinience
+                        </footer>
+    
+                </div>
+    </form>
+</body>
+</html>
